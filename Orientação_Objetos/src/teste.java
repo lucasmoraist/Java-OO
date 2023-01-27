@@ -4,16 +4,16 @@ public class teste {
 	public static void main(String[] args) {
 		Cliente lucas = new Cliente();
 		
-		lucas.nome ="Lucas de Morais";
-		lucas.cpf ="44455599912";
-		lucas.profissao="t.i";
+		lucas.setNome("Lucas de Morais");
+		lucas.setCpf("44455599912");
+		lucas.setProfissao("t.i");
 		
 		Conta contaLucas = new Conta();
-		contaLucas.saldo = 400;
-		contaLucas.titular = lucas;
+		contaLucas.setSaldo(400);
+		contaLucas.setTitular(lucas);
 		
-		System.out.println(contaLucas.titular.nome);
-		System.out.println(contaLucas.titular);
+		System.out.println(contaLucas.getTitular().getNome());
+		System.out.println(contaLucas.getTitular());
 				
 	}
 
